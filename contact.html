@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – FINCON</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#f5f5f5; margin:0; }
+        header { background:#003366; color:#fff; padding:20px; text-align:center; }
+        section { max-width:1100px; margin:40px auto; padding:20px; }
+        .container { display:flex; gap:30px; }
+        .box { background:#fff; padding:25px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .form { flex:70%; }
+        .info { flex:30%; }
+        input, textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; }
+        button { background:#28a745; color:#fff; border:none; padding:12px; width:100%; border-radius:6px; cursor:pointer; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact FINCON</h1>
+</header>
+
+<section>
+    <div class="container">
+        <!-- OPT-IN FORM -->
+        <div class="box form">
+            <h2>Enquiry Form</h2>
+            <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.'); this.reset();">
+                <label>Name *</label>
+                <input type="text" required>
+
+                <label>Email *</label>
+                <input type="email" required>
+
+                <label>Mobile *</label>
+                <input type="text" required>
+
+                <label>Message *</label>
+                <textarea rows="4" required></textarea>
+
+                <div style="margin-bottom:15px;">
+                    <input type="checkbox" required> I agree to receive communication via Call, SMS, Email & WhatsApp.
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="box info">
+            <h3>Contact Information</h3>
+            <p><strong>Name:</strong> S. Balakrishnan</p>
+            <p><strong>Address:</strong><br>D2012, Block 20,<br>Vaikund Sundaram Apartments,<br>Karapakkam, Chennai 600097</p>
+            <p><strong>Mobile:</strong> 9790862292</p>
+            <p><strong>Email:</strong> bala27572@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
