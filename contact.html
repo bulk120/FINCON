@@ -20,26 +20,126 @@
 </header>
 
 <section>
+
+  <div class="card">
+    <h1>Contact FINCON Financial Services</h1>
+    <p>
+      We’re here to help you with all your financial requirements. Whether you are
+      looking for a home loan, personal loan, business funding, or expert financial
+      guidance, our team is ready to assist you.
+    </p>
+    <p>
+      At FINCON Financial Services, we believe in timely communication and personalized
+      support. Every enquiry is handled with professionalism and complete confidentiality.
+    </p>
+    <p>
+      Reach out to us using the contact form below or through the provided contact
+      details, and our representative will get in touch with you at the earliest.
+    </p>
+  </div>
+
   <div class="grid">
+
     <div class="card">
-      <h2>Enquiry Form</h2>
-      <form onsubmit="event.preventDefault();alert('Thank you!');this.reset();">
-        <input placeholder="Name" required>
-        <input placeholder="Email" required>
-        <input placeholder="Mobile" required>
-        <textarea placeholder="Message"></textarea>
-        <button>Submit</button>
+      <h2>Send Us an Enquiry</h2>
+      <p>
+        Please fill out the enquiry form with accurate details so we can understand
+        your requirement and provide the most suitable assistance.
+      </p>
+      <p>
+        Our team typically responds within one business day during working hours.
+      </p>
+
+      <form
+        onsubmit="
+          event.preventDefault();
+          if(!document.getElementById('optin').checked){
+            alert('Please provide consent to be contacted.');
+            return;
+          }
+          alert('Thank you for contacting FINCON. Our team will reach out to you shortly.');
+          this.reset();
+        ">
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <textarea placeholder="Briefly describe your requirement"></textarea>
+
+        <!-- OPT-IN CONSENT -->
+        <div class="optin-box">
+          <div class="optin-title">Communication Consent</div>
+
+          <label class="optin-container">
+            <input type="checkbox" id="optin" required>
+            <span class="checkmark"></span>
+            <span class="optin-text">
+              I agree to be contacted by <strong>FINCON Financial Services</strong>
+              via <strong>WhatsApp, SMS, RCS SMS, Email, or Call</strong> regarding
+              my enquiry and related services.
+            </span>
+          </label>
+
+          <div class="optin-note">
+            Your information is secure and will not be shared without consent.
+          </div>
+        </div>
+
+        <button type="submit">Submit Enquiry</button>
       </form>
     </div>
 
     <div class="card">
-      <h3>Contact Information</h3>
-      <p>📞 9790862292</p>
-      <p>✉ bala27572@gmail.com</p>
-      <p>📍 Chennai, Tamil Nadu</p>
+      <h2>Contact Information</h2>
+      <p>
+        You may also contact us directly using the information below. Our support
+        team is available during standard business hours to assist you.
+      </p>
+
+      <p>
+        📍 <strong>Location:</strong> Chennai, Tamil Nadu<br><br>
+        📞 <strong>Phone:</strong> 9790862292<br><br>
+        ✉ <strong>Email:</strong> bala27572@gmail.com
+      </p>
+
+      <p>
+        We encourage clients to share complete and accurate details to help us
+        respond effectively and provide appropriate guidance.
+      </p>
     </div>
+
   </div>
+
+  <div class="card">
+    <h2>What Happens After You Contact Us?</h2>
+    <p>
+      Once we receive your enquiry, our relationship manager will review your
+      requirement and contact you for further discussion.
+    </p>
+    <p>
+      We will assess your eligibility, explain available financial options,
+      and guide you through the next steps clearly and transparently.
+    </p>
+    <p>
+      There is no obligation to proceed unless you are fully satisfied with
+      the information and solutions provided.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Business Hours</h2>
+    <p>
+      🕘 Monday to Saturday: 9:30 AM – 6:30 PM<br>
+      🕘 Sunday: Closed
+    </p>
+    <p>
+      Enquiries submitted outside business hours will be addressed on the
+      next working day.
+    </p>
+  </div>
+
 </section>
+
 
 <footer class="site-footer">
   <div class="footer-container">
