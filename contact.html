@@ -1,135 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – FINCON</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: #003366;
-            padding: 20px;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav {
-            background: #02457a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #003366;
-            margin-bottom: 20px;
-        }
-
-        .services-list div {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-            color: white;
-        }
-
-        footer a {
-            color: #9fd3ff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        body { font-family: Arial, sans-serif; background:#f5f5f5; margin:0; }
-        header { background:#003366; color:#fff; padding:20px; text-align:center; }
-        section { max-width:1100px; margin:40px auto; padding:20px; }
-        .container { display:flex; gap:30px; }
-        .box { background:#fff; padding:25px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
-        .form { flex:70%; }
-        .info { flex:30%; }
-        input, textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; }
-        button { background:#28a745; color:#fff; border:none; padding:12px; width:100%; border-radius:6px; cursor:pointer; }
-    </style>
+<title>Contact – FINCON</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Contact FINCON</h1>
+<header class="site-header">
+  <div class="nav-container">
+    <div class="logo">FINCON</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<nav style="background: #02457a; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="about.html" style="color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;">About Us</a>
-    <a href="services.html" style="color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;">Services</a>
-    <a href="contact.html" style="color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
-</nav>
-
 <section>
-    <div class="container">
-        <!-- OPT-IN FORM -->
-        <div class="box form">
-            <h2>Enquiry Form</h2>
-            <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.'); this.reset();">
-                <label>Name *</label>
-                <input type="text" required>
-
-                <label>Email *</label>
-                <input type="email" required>
-
-                <label>Mobile *</label>
-                <input type="text" required>
-
-                <label>Message *</label>
-                <textarea rows="4" required></textarea>
-
-                <div style="margin-bottom:15px;">
-                    <input type="checkbox" required> I agree to receive communication via Call, SMS, Email & WhatsApp.
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <!-- CONTACT DETAILS -->
-        <div class="box info">
-            <h3>Contact Information</h3>
-            <p><strong>Name:</strong> S. Balakrishnan</p>
-            <p><strong>Address:</strong><br>D2012, Block 20,<br>Vaikund Sundaram Apartments,<br>Karapakkam, Chennai 600097</p>
-            <p><strong>Mobile:</strong> 9790862292</p>
-            <p><strong>Email:</strong> bala27572@gmail.com</p>
-        </div>
+  <div class="grid">
+    <div class="card">
+      <h2>Enquiry Form</h2>
+      <form onsubmit="event.preventDefault();alert('Thank you!');this.reset();">
+        <input placeholder="Name" required>
+        <input placeholder="Email" required>
+        <input placeholder="Mobile" required>
+        <textarea placeholder="Message"></textarea>
+        <button>Submit</button>
+      </form>
     </div>
+
+    <div class="card">
+      <h3>Contact Information</h3>
+      <p>📞 9790862292</p>
+      <p>✉ bala27572@gmail.com</p>
+      <p>📍 Chennai, Tamil Nadu</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-    © 2025 Fincon Financial Services. All Rights Reserved.<br><br>
-    <a href="terms.html" target="_blank">Terms & Conditions</a> |
-    <a href="privacy.html" target="_blank">Privacy Policy</a>
+<footer class="site-footer">
+  <div class="footer-container">
+    <h3>FINCON Financial Services</h3>
+    <p>Your trusted partner for loans & financial advisory.</p>
+    <div class="footer-links">
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p class="copy">© 2025 FINCON Financial Services</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/919790862292" class="whatsapp">💬</a>
 
 </body>
 </html>
-
