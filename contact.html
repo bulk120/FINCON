@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact FINCON Financial Services | Get Financial Guidance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">F</div>
+                <div class="logo-text">FIN<span>CON</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <div id="contactPage" class="page-content active">
+        <section class="hero">
+            <div class="container">
+                <h1>Contact FINCON Financial Services</h1>
+                <p>We're here to help you with all your financial requirements. Whether you're looking for a home loan, personal loan, business funding, or expert financial guidance, our team is ready to assist you.</p>
+                <a href="#contact-form" class="btn btn-secondary">Send an Enquiry</a>
+            </div>
+        </section>
+
+        <main class="content-section">
+            <div class="container">
+                <div class="grid-container">
+                    <!-- Left Column: Contact Form -->
+                    <div class="card">
+                        <h2 class="section-title" id="contact-form">Send Us an Enquiry</h2>
+                        <p>Please fill out the enquiry form with accurate details so we can understand your requirement and provide the most suitable assistance.</p>
+                        <p class="response-time"><i class="fas fa-clock"></i> Our team typically responds within one business day during working hours.</p>
+                        
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name <span class="required-star">*</span></label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required-star">*</span></label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number <span class="required-star">*</span></label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Required <span class="required-star">*</span></label>
+                                <select id="service" class="form-control" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="home-loan">Home Loan</option>
+                                    <option value="personal-loan">Personal Loan</option>
+                                    <option value="business-funding">Business Funding</option>
+                                    <option value="financial-guidance">Financial Guidance</option>
+                                    <option value="investment-advice">Investment Advice</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message <span class="required-star">*</span></label>
+                                <textarea id="message" class="form-control" placeholder="Please provide details about your financial requirement..." required></textarea>
+                            </div>
+                            
+                            <!-- HIGHLIGHTED COMMUNICATION CONSENT SECTION -->
+                            <div class="consent-container">
+                                <div class="consent-header">
+                                    <div class="consent-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3 class="consent-title">Communication Consent</h3>
+                                </div>
+                                
+                                <div class="consent-message">
+                                    <p class="consent-text">
+                                        <strong>I agree to be contacted by FINCON Financial Services via WhatsApp, SMS, RCS SMS, Email, or Call regarding my enquiry and related services.</strong>
+                                    </p>
+                                    
+                                    <div class="communication-methods">
+                                        <div class="method-tag">
+                                            <i class="fab fa-whatsapp"></i> WhatsApp
+                                        </div>
+                                        <div class="method-tag">
+                                            <i class="fas fa-sms"></i> SMS
+                                        </div>
+                                        <div class="method-tag">
+                                            <i class="fas fa-comment-alt"></i> RCS SMS
+                                        </div>
+                                        <div class="method-tag">
+                                            <i class="fas fa-envelope"></i> Email
+                                        </div>
+                                        <div class="method-tag">
+                                            <i class="fas fa-phone"></i> Call
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="consent-security">
+                                        <i class="fas fa-lock"></i>
+                                        <span>Your information is secure and will not be shared without consent.</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="consent" required>
+                                    <label for="consent">
+                                        I confirm that I have read and understood the Communication Consent above and agree to be contacted via the specified methods. 
+                                        I also agree to the <a href="terms.html" id="termsLink">Terms & Conditions</a> and <a href="privacy.html" id="privacyLink">Privacy Policy</a>. 
+                                        <span class="required-star">*</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-block">Submit Enquiry</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Right Column: Contact Information -->
+                    <div>
+                        <div class="card">
+                            <h2 class="section-title">Contact Information</h2>
+                            <p>You may also contact us directly using the information below. Our support team is available during standard business hours to assist you.</p>
+                            
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Location</h4>
+                                        <p>Chennai, Tamil Nadu, India</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Phone</h4>
+                                        <p><a href="tel:9790862292">+91 97908 62292</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Email</h4>
+                                        <p><a href="mailto:balakrishnan@finconfinance.online">balakrishnan@finconfinance.online</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="business-hours">
+                                <h3>Business Hours</h3>
+                                <ul class="hours-list">
+                                    <li>
+                                        <span class="day">Monday - Saturday</span>
+                                        <span class="time">9:30 AM – 6:30 PM</span>
+                                    </li>
+                                    <li>
+                                        <span class="day">Sunday</span>
+                                        <span class="time">Closed</span>
+                                    </li>
+                                </ul>
+                                <p class="hours-note"><i class="fas fa-info-circle"></i> Enquiries submitted outside business hours will be addressed on the next working day.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-top: 30px;">
+                            <h3>Legal & Compliance</h3>
+                            <ul style="list-style-position: inside; color: var(--gray); margin-top: 15px;">
+                                <li style="margin-bottom: 10px;"><a href="terms.html" id="viewTerms" style="color: var(--primary); text-decoration: none;">Terms & Conditions</a></li>
+                                <li style="margin-bottom: 10px;"><a href="privacy.html" id="viewPrivacy" style="color: var(--primary); text-decoration: none;">Privacy Policy</a></li>
+                                <li style="margin-bottom: 10px;">Professional handling with complete confidentiality</li>
+                                <li>Regulatory compliance as per Indian laws</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Steps Section -->
+                <div class="process-section">
+                    <h2 class="section-title process-title">What Happens After You Contact Us?</h2>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3>Enquiry Review</h3>
+                            <p>Our relationship manager will review your requirement and contact you for further discussion within one business day.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3>Assessment</h3>
+                            <p>We will assess your eligibility and explain all available financial options tailored to your specific situation.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3>Guidance</h3>
+                            <p>We'll guide you through the next steps clearly and transparently, answering all your questions along the way.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3>Decision</h3>
+                            <p>There is no obligation to proceed unless you are fully satisfied with the information and solutions provided.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">FIN<span>CON</span></a>
+                    <p>FINCON Financial Services provides expert financial guidance and solutions for home loans, personal loans, business funding, and more.</p>
+                    <div class="social-links">
+                        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Home Loans</a></li>
+                        <li><a href="services.html">Personal Loans</a></li>
+                        <li><a href="services.html">Business Funding</a></li>
+                        <li><a href="services.html">Financial Guidance</a></li>
+                        <li><a href="services.html">Investment Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="legal-links">
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Compliance</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 FINCON Financial Services. All rights reserved. | Chennai, Tamil Nadu</p>
+                <p>Regulated as per Indian financial services regulations</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
